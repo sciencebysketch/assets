@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science by Sketch — Assets</title>
+    <meta name="description" content="Science by Sketch — visual asset library">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="wrap">
+        <header>
+            <p class="eyebrow">Science by Sketch</p>
+            <h1>Assets</h1>
+            <div class="search-row">
+                <input class="search-inp" id="searchInp" type="text" placeholder="Search assets by filename…">
+                <span class="count-badge" id="countBadge">loading…</span>
+            </div>
+        </header>
+
+        <main id="grid" class="grid"></main>
+    </div>
+
+    <!-- Detail modal -->
+    <div class="modal-bg" id="modalBg"></div>
+    <div class="modal" id="modal">
+        <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+        <div class="modal-preview" id="modalPreview"></div>
+        <p class="modal-name" id="modalName"></p>
+        <p class="modal-path" id="modalPath"></p>
+        <div class="modal-actions">
+            <button class="btn-secondary" id="copyUrlBtn">Copy image URL</button>
+            <a class="btn-primary" id="modalDownload" download>Download</a>
+        </div>
+        <p class="modal-copied" id="modalCopied">Copied to clipboard</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
